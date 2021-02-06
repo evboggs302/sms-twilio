@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import Container from "./comps/Container.js";
+import Maverick from "./comps/Maverick.js";
 import axios from "axios";
 import "./App.css";
 
@@ -15,7 +16,7 @@ function App(props) {
     <div className="App">
       <header className="App-header">
         <Switch>
-          <Route exact path="/" component={Container} />
+          <Route exact path="/" component={Maverick} />
           <Route />
           <Route />
           <Route />

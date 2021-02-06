@@ -1,0 +1,12 @@
+.dropzone {
+  background-color: white;
+  color: grey;
+  font-style: italic;
+  width: 500px;
+  height: 200px;
+  border-style: dashed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
