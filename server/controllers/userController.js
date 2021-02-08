@@ -5,9 +5,11 @@ const Bcrypt = require("bcryptjs");
 
 module.exports = {
   getAllUsers: (req, res, next) => {
-    User.find({}).then((users) => {
-      res.status(200).send(users);
-    });
+    User.find({})
+      .then((users) => {
+        res.status(200).send(users);
+      })
+      .catch((err) => res.status(500).send(err));
   },
   getSingleUser: (req, res, next) => {
     const { id } = req.body;

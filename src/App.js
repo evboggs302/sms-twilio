@@ -9,7 +9,8 @@ function App(props) {
   useEffect(() => {
     axios
       .get("/api/getAllUsers")
-      .then((res) => console.log("server response", res.data));
+      .then((res) => console.log("server response", res.data))
+      .catch((err) => console.log(err));
   }, []);
   return (
     <div className="App">
