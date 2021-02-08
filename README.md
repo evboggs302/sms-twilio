@@ -10,6 +10,7 @@
 
 - `npm run serve` // `nodemon` Launches the server file.
 - `npm test` starts the test suit; runs all test in the `__tests__` directory
+- `firebase deploy` will run `npm run build` and then deploy the app for twilio to work.
 
 ### .ENV example content
 

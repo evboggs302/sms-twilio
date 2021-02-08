@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 var fs = require("fs");
 
 module.exports = {
-  saveImage: (req, res) => {
+  saveImage: (req, res, next) => {
     console.log("::::grid");
     console.log("SAVE IMAGE REQ: ", req);
     //const gridfs = new mongoose.mongo.GridFSBucket(mongoose.connection.db);
@@ -24,7 +24,7 @@ module.exports = {
       });
   },
 
-  getImage: (req, res) => {
+  getImage: (req, res, next) => {
     var gridfs = new mongoose.mongo.GridFSBucket(mongoose.connection.db, {
       chunkSizeBytes: 1024,
       bucketName: "songs",
