@@ -8,7 +8,7 @@ import "./App.css";
 function App(props) {
   useEffect(() => {
     axios
-      .get("/get_test")
+      .get("/api/getAllUsers")
       .then((res) => console.log("server response", res.data));
   }, []);
   return (
