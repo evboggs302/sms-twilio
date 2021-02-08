@@ -2,7 +2,6 @@
   "name": "scavenger-hunt",
   "version": "0.1.0",
   "main": "server/",
-  "proxy": "http://localhost:22306/api",
   "engine": {
     "node": "15.7.0",
     "npm": "7.4.3"
