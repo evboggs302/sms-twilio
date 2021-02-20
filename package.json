@@ -2,10 +2,6 @@
   "name": "scavenger-hunt",
   "version": "0.1.0",
   "main": "server/",
-  "engine": {
-    "node": "15.7.0",
-    "npm": "7.4.3"
-  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -35,8 +31,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
